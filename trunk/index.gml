@@ -14,7 +14,7 @@
   <table width="100%">
     <tr>
       <td style="padding-right:10px; width:250px" valign="top">
-        <gm:list id="myList" data="http://creator.zoho.com/apapendieck/rss/4/"
+        <gm:list id="myList" data="http://tinyurl.com/2uo9kx"
             pagesize="5" template="myListTemplate">
           <gm:handleEvent event="select" src="myMap"/>
         </gm:list>
