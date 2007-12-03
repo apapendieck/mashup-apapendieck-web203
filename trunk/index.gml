@@ -14,14 +14,14 @@
   <table width="100%">
     <tr>
       <td style="padding-right:10px; width:250px" valign="top">
-        <gm:list id="myList" data="http://pipes.yahoo.com/pipes/pipe.run?_id=5eda95fccb04b4f95b5c6dc9490654b0&_render=rss"
+        <gm:list id="myList" data="http://creator.zoho.com/apapendieck/rss/4/"
             pagesize="5" template="myListTemplate">
           <gm:handleEvent event="select" src="myMap"/>
         </gm:list>
       </td>
       <td valign="top">
         <gm:map id="myMap" style="border:solid black 1px" control="large"
-            maptypes="true" data="${myList}" geolocationref="atom:title"
+            maptypes="true" data="${myList}" geolocationref="ns1660700041:title"
             infotemplate="myMapDetailsTemplate"
             lat="30.53" lng="-89.68" zoom="9">
           <gm:handleEvent event="select" src="myList"/>
@@ -33,7 +33,7 @@
   <gm:template id="myListTemplate">
     <table class="blue-theme" style="width:250px">
       <tr repeat="true">
-        <td><gm:text ref="atom:title"/></td>
+        <td><gm:text ref="ns1660700041:title"/></td>
       </tr>
       <tfoot>
         <tr>
@@ -45,9 +45,7 @@
 
   <gm:template id="myMapDetailsTemplate">
     <div repeat="true">
-      <b><gm:text ref="atom:title"/></b><br/>
-      Lat: <gm:text ref="geo:long"/><br/>
-      Long: <gm:text ref="geo:long"/>
+      <b><gm:text ref="ns1660700041:title"/></b><br/>
     </div>
   </gm:template>
 
